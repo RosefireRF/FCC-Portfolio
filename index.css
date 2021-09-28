@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+#navbar {
+    height: 7vh;
+    width: 100vw;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#welcome-section{
+    margin-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: red;
+}
+#projects{
+    height: 100vh;
+    background-color: blue;
+}
+#skills{
+    height: 100vh;
+    background-color: darkorange;
+}
+#contact{
+    height: 100vh;
+    background-color: firebrick;
+}
+#right-nav{
+    width: 25vw;
+    height: 100%;
+    background-color: hotpink;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link-holder{
+    height: 100%;
+    width: 33%;
+    text-align:center;
+    border: 2px solid black;
+}
+.link-holder:hover{
+    background-color: brown;
+}
+.link-holder > a{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
