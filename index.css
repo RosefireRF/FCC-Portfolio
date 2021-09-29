@@ -202,12 +202,12 @@ h1{
     #right-nav{
         width: 60%;
     }
+    .cover{
+        opacity: 0%;
+    }
 }
 @media only screen and  (min-width: 768px) {
     #github{
       padding: 0 2.6rem;
-    }
-    .cover{
-        opacity: 0%;
     }
 }
