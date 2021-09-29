@@ -15,6 +15,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 #welcome-section{
     display: flex;
@@ -30,10 +31,15 @@ h1{
 #skills{
     height: 100vh;
     background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #contact{
     height: 100vh;
     background-color: firebrick;
+    
 }
 #left-nav{
     height: 100%;
@@ -68,6 +74,19 @@ h1{
     justify-content: center;
     text-decoration: none;
     color: black;
+}
+#skills-holder{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill{
+    width: 20%;
+    height: 30%;
+    background-color: white;
+    border: 2px solid black;
 }
 @media(max-width: 768px){
     #right-nav{
