@@ -192,12 +192,13 @@ h1{
 }
 .js{
     background-color: #F7E018;
-    color: white;
+    color: black;
 }
 .git{
     background-color: #171A1F;
     color: white;
 }
+
 @media only screen and (max-width: 768px){
     #right-nav{
         width: 60%;
@@ -205,6 +206,34 @@ h1{
     .cover{
         opacity: 0%;
     }
+    #skills{
+        height: 300vh;
+    }
+    #skills-holder{
+        height: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .skill{
+        position:unset;
+        width: 90%;
+        height: 25%;
+    }
+    .project-tile{
+        margin-top: 0%;
+        width: 80%;
+        height: 15%;
+    }
+    #github{
+        width: 50%;
+    }
+    #s-h{
+        margin-bottom: 10%;
+    }
+}
+h1{
+    text-align: center;
 }
 @media only screen and  (min-width: 768px) {
     #github{
