@@ -1,7 +1,6 @@
 *{
     margin: 0%;
     padding: 0%;
-    
 }
 h1{
     opacity: 80%;
@@ -22,11 +21,24 @@ h1{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: white;
+    background-color: #F8F4ED;
+}
+#welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#me{
+    font-size: 40px;
+}
+#welcome > p{
+    font-size: 30px;
+    opacity: 80%;
 }
 #projects{
     height: 100vh;
-    background-color: white;
+    background-color: #F8F4ED;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,12 +53,12 @@ h1{
     flex-wrap: wrap;
 }
 .project-tile{
-    background-color: black;
+    background-color: #171A1F;
     position:relative;
     color: white;
     margin-top: 5%;
     margin-right: 5%;
-    height: 20%;
+    height: 30%;
     width: 20%;
 }
 .project-tile > h2{
@@ -60,10 +72,11 @@ h1{
 .project-tile > p{
     font-size: 1em;
     text-align: center;
+    margin: 2%;
 }
 #skills{
     height: 100vh;
-    background-color: white;
+    background-color: #F8F4ED;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,6 +177,9 @@ h1{
     background-color: white;
     border: 1px solid black;
 }
+.filipe-ubi-se{
+    margin: 5%;
+}
 @keyframes remove{
     from {opacity: 100%;}
     to {opacity: 0%;}
@@ -177,11 +193,6 @@ h1{
     align-items: center;
     justify-content: center;
 }
-.cover:hover{
-    animation-name: remove;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-}
 .html{
     background-color: #F16524;
     color: white;
@@ -192,7 +203,7 @@ h1{
 }
 .js{
     background-color: #F7E018;
-    color: black;
+    color: #171A1F;
 }
 .git{
     background-color: #171A1F;
@@ -200,8 +211,16 @@ h1{
 }
 
 @media only screen and (max-width: 768px){
+    #projects{
+        height: 200vh;
+    }
     #right-nav{
         width: 60%;
+    }
+    .skill{
+        width: 90%;
+        height: 25%;
+        margin-bottom: 10%;
     }
     .cover{
         opacity: 0%;
@@ -215,14 +234,8 @@ h1{
         align-items: center;
         justify-content: start;
     }
-    .skill{
-        position:unset;
-        width: 90%;
-        height: 25%;
-        margin-bottom: 10%;
-    }
     .project-tile{
-        margin-top: 0%;
+        margin-top: 5%;
         width: 80%;
         height: 15%;
     }
@@ -232,6 +245,9 @@ h1{
     #s-h{
         margin-bottom: 10%;
     }
+    #c-h{
+        margin-top: 15%;
+    }
 }
 h1{
     text-align: center;
@@ -239,5 +255,10 @@ h1{
 @media only screen and  (min-width: 768px) {
     #github{
       padding: 0 2.6rem;
+    }
+    .cover:hover{
+        animation-name: remove;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
     }
 }
